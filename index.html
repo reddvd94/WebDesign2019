@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Registrazione Smart Travelling</title>
+
+  <!-- Font Icon -->
+  <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+  <!-- Main css -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="main">
+
+    <!--<h1>Sign up</h1>-->
+    <center><b>
+        <font size="7" color="black">Sign Up</font></u></center>
+    <div class="container">
+    <div class="sign-up-content">
+        <form action="registrazione.php" method="POST" class="signup-form">
+          <h2 class="form-title">
+            <center>Seleziona il tipo di utenza</center>
+          </h2>
+          <div class="form-radio">
+            <center>
+              <input type="radio" name="utenza" value="Viaggiatore" id="newbie" checked="checked" onclick="DShow()" />
+              <label for="newbie">Viaggiatore</label>
+
+              <input type="radio" name="utenza" value="Struttura" id="average" onclick="Show()" />
+              <label for="average">Struttura</label></center>
+
+            <!-- <input type="radio" name="member_level" value="master" id="master" />
+                        <label for="master">Master</label> -->
+          </div>
+
+          <div class="form-textbox">
+            <label for="name"></label>
+            <input type="text" name="name" id="name" placeholder="Nome e cognome"/>
+          </div>
+
+
+          <div class="form-textbox ">
+            <label for="cf"></label>
+            <input type="text" name="cf" id="mid" placeholder="Codice fiscale" />
+          </div>
+
+          <div class="form-textbox struttura" style="display:none;">
+            <label for="ns"></label>
+            <input type="text" name="ns" id="mid" placeholder="Nome struttura"/>
+          </div>
+
+          <div class="form-textbox struttura" style="display:none;" >
+            <label for="iva"></label>
+            <input type="text" name="iva" id="mid" placeholder="Partita iva"/>
+          </div>
+
+
+          <div class="form-textbox">
+            <label for="email"></label>
+            <input type="email" name="email" id="mid" placeholder="Email"/>
+          </div>
+
+          <div class="form-textbox">
+            <label for="pass"></label>
+            <input type="password" name="pass" id="mid" placeholder="Password"/>
+          </div>
+
+          <div class="form-textbox" id="pass">
+            <label for="passr"></label>
+            <input type="password" name="passr" placeholder="Ripeti la password" />
+          </div>
+
+          <div class="form-group">
+            <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+            <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in <a href="#" class="term-service">Terms of service</a></label>
+          </div>
+
+          <div class="form-textbox">
+            <input type="submit" name="submit" id="submit" class="submit" value="Registrati" />
+          </div>
+        </form>
+        <p class="loginhere">
+          Already have an account ?<a href="#" class="loginhere-link"> Log in</a>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JS -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
